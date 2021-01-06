@@ -1,0 +1,139 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    color: #FFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1E1F23;
+}
+
+.product{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 300px;
+    height: 400px;
+    background-color: #FFF;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.product .imagebox{
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.product .imagebox img{
+    display: block;
+    width: 80%;
+    margin: 10px auto 0;
+}
+
+.specs{
+    position: absolute;
+    width: 100%;
+    bottom: -140px;
+    background-color: #FFF;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #000;
+    transition: .5s;
+}
+
+.specs:hover{
+    bottom: 0;
+}
+
+.specs h2{
+    font-size: 25px;
+    width: 100%;
+}
+
+.specs h2 span{
+    font-size: 18px;
+    color: #808080;
+    font-weight: normal;
+}
+
+.specs .price{
+    position: absolute;
+    top: 12px;
+    right: 25px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+label{
+    display: block;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+ul{
+    display: flex;
+}
+
+ul li {
+    width: 50px;
+    height: 20px;
+    list-style: none;
+    margin: 5px 5px 0;
+    font-size: 15px;
+    color: #808080;
+    text-align: center;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+ul li:hover{
+    color: #000;
+}
+
+ul li:first-child{
+    margin-left: 0;
+}
+
+ul.color li{
+    width: 50px;
+    height: 20px;
+}
+
+ul.color li:nth-child(1){
+    background-color: #FF0;
+}
+ul.color li:nth-child(2){
+    background-color: #000;
+}
+ul.color li:nth-child(3){
+    background-color: #F00;
+}
+ul.color li:nth-child(4){
+    background-color: #00F;
+}
+ul.color li:nth-child(5){
+    background-color: #F0F;
+}
+
+a{
+    display: block;
+    padding: 5px;
+    color: #FFF;
+    margin: 10px 0 0;
+    background-color: #48a519;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+a:hover{
+    background-color: #5ebf31;
+    color: #000;
+}
